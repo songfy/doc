@@ -1,6 +1,6 @@
 
 <h1>目录<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#pandas基本概念" data-toc-modified-id="pandas基本概念-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>pandas基本概念</a></span><ul class="toc-item"><li><span><a href="#pandas数据结构剖析" data-toc-modified-id="pandas数据结构剖析-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>pandas数据结构剖析</a></span><ul class="toc-item"><li><span><a href="#Series" data-toc-modified-id="Series-1.1.1"><span class="toc-item-num">1.1.1&nbsp;&nbsp;</span>Series</a></span></li><li><span><a href="#DataFrame" data-toc-modified-id="DataFrame-1.1.2"><span class="toc-item-num">1.1.2&nbsp;&nbsp;</span>DataFrame</a></span></li><li><span><a href="#索引" data-toc-modified-id="索引-1.1.3"><span class="toc-item-num">1.1.3&nbsp;&nbsp;</span>索引</a></span></li><li><span><a href="#pandas基本操作" data-toc-modified-id="pandas基本操作-1.1.4"><span class="toc-item-num">1.1.4&nbsp;&nbsp;</span>pandas基本操作</a></span><ul class="toc-item"><li><span><a href="#重索引" data-toc-modified-id="重索引-1.1.4.1"><span class="toc-item-num">1.1.4.1&nbsp;&nbsp;</span>重索引</a></span></li><li><span><a href="#丢弃一行或者一列" data-toc-modified-id="丢弃一行或者一列-1.1.4.2"><span class="toc-item-num">1.1.4.2&nbsp;&nbsp;</span>丢弃一行或者一列</a></span></li><li><span><a href="#数据选取" data-toc-modified-id="数据选取-1.1.4.3"><span class="toc-item-num">1.1.4.3&nbsp;&nbsp;</span>数据选取</a></span></li><li><span><a href="#数据对齐" data-toc-modified-id="数据对齐-1.1.4.4"><span class="toc-item-num">1.1.4.4&nbsp;&nbsp;</span>数据对齐</a></span></li><li><span><a href="#pandas函数简单介绍" data-toc-modified-id="pandas函数简单介绍-1.1.4.5"><span class="toc-item-num">1.1.4.5&nbsp;&nbsp;</span>pandas函数简单介绍</a></span></li></ul></li></ul></li></ul></li></ul></div>
+<div class="toc"><ul class="toc-item"><li><span><a href="#pandas基本概念" data-toc-modified-id="pandas基本概念-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>pandas基本概念</a></span><ul class="toc-item"><li><span><a href="#pandas数据结构剖析" data-toc-modified-id="pandas数据结构剖析-1.1"><span class="toc-item-num">1.1&nbsp;&nbsp;</span>pandas数据结构剖析</a></span><ul class="toc-item"><li><span><a href="#Series" data-toc-modified-id="Series-1.1.1"><span class="toc-item-num">1.1.1&nbsp;&nbsp;</span>Series</a></span></li><li><span><a href="#DataFrame" data-toc-modified-id="DataFrame-1.1.2"><span class="toc-item-num">1.1.2&nbsp;&nbsp;</span>DataFrame</a></span></li><li><span><a href="#索引" data-toc-modified-id="索引-1.1.3"><span class="toc-item-num">1.1.3&nbsp;&nbsp;</span>索引</a></span></li><li><span><a href="#pandas基本操作" data-toc-modified-id="pandas基本操作-1.1.4"><span class="toc-item-num">1.1.4&nbsp;&nbsp;</span>pandas基本操作</a></span><ul class="toc-item"><li><span><a href="#重索引" data-toc-modified-id="重索引-1.1.4.1"><span class="toc-item-num">1.1.4.1&nbsp;&nbsp;</span>重索引</a></span></li><li><span><a href="#丢弃一行或者一列" data-toc-modified-id="丢弃一行或者一列-1.1.4.2"><span class="toc-item-num">1.1.4.2&nbsp;&nbsp;</span>丢弃一行或者一列</a></span></li><li><span><a href="#数据选取" data-toc-modified-id="数据选取-1.1.4.3"><span class="toc-item-num">1.1.4.3&nbsp;&nbsp;</span>数据选取</a></span></li><li><span><a href="#数据对齐" data-toc-modified-id="数据对齐-1.1.4.4"><span class="toc-item-num">1.1.4.4&nbsp;&nbsp;</span>数据对齐</a></span></li></ul></li><li><span><a href="#pandas函数简单介绍" data-toc-modified-id="pandas函数简单介绍-1.1.5"><span class="toc-item-num">1.1.5&nbsp;&nbsp;</span>pandas函数简单介绍</a></span><ul class="toc-item"><li><span><a href="#apply和applymap函数" data-toc-modified-id="apply和applymap函数-1.1.5.1"><span class="toc-item-num">1.1.5.1&nbsp;&nbsp;</span>apply和applymap函数</a></span></li><li><span><a href="#排序函数" data-toc-modified-id="排序函数-1.1.5.2"><span class="toc-item-num">1.1.5.2&nbsp;&nbsp;</span>排序函数</a></span></li><li><span><a href="#汇总计算函数" data-toc-modified-id="汇总计算函数-1.1.5.3"><span class="toc-item-num">1.1.5.3&nbsp;&nbsp;</span>汇总计算函数</a></span></li></ul></li><li><span><a href="#缺失值的处理" data-toc-modified-id="缺失值的处理-1.1.6"><span class="toc-item-num">1.1.6&nbsp;&nbsp;</span>缺失值的处理</a></span></li><li><span><a href="#整数索引" data-toc-modified-id="整数索引-1.1.7"><span class="toc-item-num">1.1.7&nbsp;&nbsp;</span>整数索引</a></span></li></ul></li></ul></li></ul></div>
 
 ## pandas基本概念
 
@@ -729,11 +729,11 @@ print(a.sub(b, axis=0))
 
  axis=0表示**纵向**减法.
 
-##### pandas函数简单介绍
+#### pandas函数简单介绍
 
 这里我们会简单介绍一些pandas的一些函数, 我们来看看, DataFrame上可以定义哪些有趣的函数.
 
-######  1). apply和applymap函数
+##### apply和applymap函数
 
 首先, 我们来介绍一下apply函数, 这个函数可以把我们自定义的函数用在DataFrame的每一行或者每一列上, 我们来看一个例子.
 
@@ -863,6 +863,440 @@ print(b)
     margin  1.19  2.38  2.32  2.38  1.19    1.19
     
 
-###### b) 排序函数
+** 作业3: 对整个表格的浮点数进行四舍五入. **
+
+##### 排序函数
 
 排序一直是一个很重要的课题, 
+
+
+```python
+a = Series(range(4), index=['a', 'c', 'b', 'd'])
+print(a)
+print("--------------------------------")
+print(a.sort_index())
+print("--------------------------------")
+print(a.sort_index(ascending=False))
+```
+
+    a    0
+    c    1
+    b    2
+    d    3
+    dtype: int32
+    --------------------------------
+    a    0
+    b    2
+    c    1
+    d    3
+    dtype: int32
+    --------------------------------
+    d    3
+    c    1
+    b    2
+    a    0
+    dtype: int32
+    
+
+我们可以发现, sort_index这个函数在Series上是按照index来排序的.
+
+对于DataFrame来说, 我们可以按照某一列来排序, 用sort_values函数.
+
+
+```python
+data = np.random.randn(3, 3)
+
+a = DataFrame(data, index=['A', 'B', 'C'], columns=['a', 'b', 'c'])
+
+print(a)
+
+print('--------------------------------------------------------------------')
+
+print(a.sort_values(by='b'))
+```
+
+              a         b         c
+    A -0.247148  0.117866  0.485004
+    B -1.303519 -1.073757 -1.265169
+    C  0.647247  1.171883 -0.301084
+    --------------------------------------------------------------------
+              a         b         c
+    B -1.303519 -1.073757 -1.265169
+    A -0.247148  0.117866  0.485004
+    C  0.647247  1.171883 -0.301084
+    
+
+另外, 我们要注意的是, 这个索引是可以用重复的, 我们可以来看看:
+
+
+```python
+data = np.random.randn(3, 3)
+
+a = DataFrame(data, index=['A', 'B', 'B'], columns=['a', 'b', 'c'])
+
+print(a.loc['B'])
+```
+
+              a         b         c
+    B -0.364841  0.765296  1.869450
+    B  0.624467  0.929586  0.673822
+    
+
+##### 汇总计算函数
+
+把一串数字经过计算变成一个数字, 这样的操作, 我们称之为汇总. 我们有很多的函数可以帮助我们完成汇总的操作,
+
+比如mean, sum, media等等, 下面我们来看看这些例子.
+
+
+```python
+data = {'a': list(range(1, 4)), 'b': list(range(1, 4)), 'c': list(range(1, 4))}
+
+frame = DataFrame(data, index=['A', 'B', 'C'])
+
+print(frame)
+
+print('--------------------------------------------------------------------------')
+
+# 把每一行加起来求和
+print(frame.sum())
+
+print('--------------------------------------------------------------------------')
+
+# 把每一列加起来求和
+print(frame.sum(axis=1))
+
+print('--------------------------------------------------------------------------')
+
+frame['sum'] = frame.sum(axis=1)
+frame.loc['sum'] = frame.sum()
+print(frame)
+
+print('--------------------------------------------------------------------------')
+
+frame = DataFrame(data, index=['A', 'B', 'C'])
+frame['sum'] = frame.median(axis=1)
+frame.loc['sum'] = frame.median()
+print(frame)
+```
+
+       a  b  c
+    A  1  1  1
+    B  2  2  2
+    C  3  3  3
+    --------------------------------------------------------------------------
+    a    6
+    b    6
+    c    6
+    dtype: int64
+    --------------------------------------------------------------------------
+    A    3
+    B    6
+    C    9
+    dtype: int64
+    --------------------------------------------------------------------------
+         a  b  c  sum
+    A    1  1  1    3
+    B    2  2  2    6
+    C    3  3  3    9
+    sum  6  6  6   18
+    --------------------------------------------------------------------------
+           a    b    c  sum
+    A    1.0  1.0  1.0  1.0
+    B    2.0  2.0  2.0  2.0
+    C    3.0  3.0  3.0  3.0
+    sum  2.0  2.0  2.0  2.0
+    
+
+在这里我们要单独讲一讲这个NaN的值的处理, NaN可以选择跳过, 也可以不跳过, 我们来看看:
+
+
+```python
+data = {'a': list(range(1, 4)), 'b': list(range(1, 4)), 'c': list(range(1, 4))}
+
+frame = DataFrame(data, index=['A', 'B', 'C'])
+
+frame['a']['A'] = np.nan
+
+print(frame)
+
+print(frame.sum())
+```
+
+         a  b  c
+    A  NaN  1  1
+    B  2.0  2  2
+    C  3.0  3  3
+    a    5.0
+    b    6.0
+    c    6.0
+    dtype: float64
+    
+
+我们发现, 这个NaN被略过去了, 我们也可以选择不略过去.
+
+
+```python
+print(frame.sum(skipna=False))
+```
+
+    a    NaN
+    b    6.0
+    c    6.0
+    dtype: float64
+    
+
+我们这里要提两个数学概念, 协方差和相关系数, 我们来看看这两个的定义:
+
+协方差:
+
+$$ Cov(X, Y) = E[(X - E[X])(Y - E[Y])] = \frac{1}{n^2}\sum_{i=1, j=1}^n(X_{i}Y_{j}-\bar{X}\bar{Y})$$
+
+这是我们协方差的定义, 我们可以看看相关系数的定义:
+
+$$ \rho = \frac{ Cov(X, Y)}{\sigma_{X}\sigma_{Y}} $$
+
+这样, 我们就把这两个概念用公式来表达出来了, 我们来看看具体怎么计算.
+
+
+```python
+data = np.random.randn(3, 3)
+
+a = DataFrame(data, index=['A', 'B', 'B'], columns=['a', 'b', 'c'])
+
+print(a.corr())
+
+print(a.cov())
+```
+
+              a         b         c
+    a  1.000000 -0.804968 -0.630290
+    b -0.804968  1.000000  0.046734
+    c -0.630290  0.046734  1.000000
+              a         b         c
+    a  0.281901 -0.189824 -0.155039
+    b -0.189824  0.197264  0.009616
+    c -0.155039  0.009616  0.214637
+    
+
+** 作业4: 了解一下相关系数和协方差的数学意义.https://www.zhihu.com/question/20852004 **
+
+另外, 我们还有一个非常实用的函数, pd.value_counts
+
+
+```python
+data = {'a': list(range(1, 4)), 'b': list(range(1, 4)), 'c': list(range(1, 4))}
+
+frame = DataFrame(data, index=['A', 'B', 'C'])
+
+print(frame.apply(pd.value_counts))
+```
+
+       a  b  c
+    3  1  1  1
+    2  1  1  1
+    1  1  1  1
+    
+
+a, b c三列中, 1, 2, 3各出现1次.
+
+
+```python
+print(frame.apply(pd.value_counts, axis=1).fillna(0))
+```
+
+         1    2    3
+    A  3.0  0.0  0.0
+    B  0.0  3.0  0.0
+    C  0.0  0.0  3.0
+    
+
+A行1出现3次, B行2出现3次, C行3出现3次
+
+#### 缺失值的处理
+
+我们这里要谈一个非常重要的概念, 缺失值的处理, 大致上看, 关于缺失值, 可以用丢弃和填充两种方法.
+
+因为我们拿到的数据, 不可能所有都是完整的, 所以我们需要对这些缺失值进行处理
+
+首先, 我们来看看怎么判断有缺失值, 我们可以用isnull来判断:
+
+
+```python
+data = np.random.randn(3, 3)
+
+a = DataFrame(data, index=['A', 'B', 'C'], columns=['a', 'b', 'c'])
+
+a['a']['A'] = None
+
+a['b']['C'] = None
+
+print(a)
+```
+
+              a         b         c
+    A       NaN -1.577756  0.572846
+    B -1.045493 -0.852665 -0.374464
+    C -1.419523       NaN  0.267812
+    
+
+
+```python
+print(a.isnull())
+```
+
+           a      b      c
+    A   True  False  False
+    B  False  False  False
+    C  False   True  False
+    
+
+进一步我们看看每一列都有多少NaN值.
+
+
+```python
+print(a.isnull().sum())
+print(a.isnull().sum(axis=1))
+```
+
+    a    1
+    b    1
+    c    0
+    dtype: int64
+    A    1
+    B    0
+    C    1
+    dtype: int64
+    
+
+我们可以过滤掉所有的有NaN的行或者列, 我们来看看:
+
+
+```python
+print(a.dropna())
+
+print("-------------------------------------")
+
+print(a.dropna(axis=1))
+
+print("-------------------------------------")
+
+print(a.dropna(how='all'))
+```
+
+              a         b         c
+    B -1.045493 -0.852665 -0.374464
+    -------------------------------------
+              c
+    A  0.572846
+    B -0.374464
+    C  0.267812
+    -------------------------------------
+              a         b         c
+    A       NaN -1.577756  0.572846
+    B -1.045493 -0.852665 -0.374464
+    C -1.419523       NaN  0.267812
+    
+
+我们来看看怎么对于缺失值来进行填充, fillna我们在前面已经看过一个具体的例子了, 我们来看看别的例子:
+
+
+```python
+print(a.fillna({'a':0, 'b':1})) # 这是用不同值对不同列进行na的填充
+
+print(a.fillna(Series({'a':0, 'b':1})))
+```
+
+              a         b         c
+    A  0.000000 -1.577756  0.572846
+    B -1.045493 -0.852665 -0.374464
+    C -1.419523  1.000000  0.267812
+              a         b         c
+    A  0.000000 -1.577756  0.572846
+    B -1.045493 -0.852665 -0.374464
+    C -1.419523  1.000000  0.267812
+    
+
+**作业5: 熟悉一下fillna的method参数已经他们的用法.**
+
+下面我们来看看怎么用各行的均值来填充缺失值.
+
+
+```python
+print(a.fillna(a.mean()))
+```
+
+              a         b         c
+    A -1.232508 -1.577756  0.572846
+    B -1.045493 -0.852665 -0.374464
+    C -1.419523 -1.215210  0.267812
+    
+
+注意到, 这个均值是沿着axis=0, 也就是把每行汇总计算得到的.
+
+#### 整数索引
+
+我们这里要谈一个很有意思的问题, 来看看这么个例子:
+
+
+```python
+data = {'a': list(range(1, 4)), 'b': list(range(1, 4)), 'c': list(range(1, 4))}
+
+frame = DataFrame(data, index=['A', 'B', 'C'])
+
+print(frame.loc['A':'B'])
+print("--------------------------------------------")
+print(frame.iloc[0: 1, 0:1])
+print("--------------------------------------------")
+print(frame.loc['A':'B', 'a':'b'])
+```
+
+       a  b  c
+    A  1  1  1
+    B  2  2  2
+    --------------------------------------------
+       a
+    A  1
+    --------------------------------------------
+       a  b
+    A  1  1
+    B  2  2
+    
+
+我们发现, 对于标签, 我们两个端点都是可以取到的, 但是对于数字索引, 是前闭后开.
+
+但是, 如果是对于缩索引, 本身就是整数, 会发生什么呢?
+
+
+```python
+frame = DataFrame(data, index=[1, 2, 3])
+
+print(frame)
+```
+
+       a  b  c
+    1  1  1  1
+    2  2  2  2
+    3  3  3  3
+    
+
+
+```python
+print(frame.iloc[0: 1])
+```
+
+       a  b  c
+    1  1  1  1
+    
+
+
+```python
+print(frame.loc[1:2])
+```
+
+       a  b  c
+    1  1  1  1
+    2  2  2  2
+    
+
+** 我们发现, 这个loc函数, 还是保留了标签, 把这个整数当做标签来处理, 两个端点都是闭的, 而iloc是当做整数索引来处理, 前闭后开.**
