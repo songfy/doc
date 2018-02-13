@@ -1079,7 +1079,7 @@ print(a.cov())
     c -0.155039  0.009616  0.214637
     
 
-** 作业4: 了解一下相关系数和协方差的数学意义.https://www.zhihu.com/question/20852004 **
+**作业4: 了解一下相关系数和协方差的数学意义.https://www.zhihu.com/question/20852004 **
 
 另外, 我们还有一个非常实用的函数, pd.value_counts
 
